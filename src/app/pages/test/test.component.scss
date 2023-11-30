@@ -1,0 +1,16 @@
+.wrapper{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-gap: 1em;
+    margin-top: 2em;
+    
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.wrapper>div{
+    background:  #eee;
+    padding: 1em;
+}
+.wrapper>div:nth-child(odd){
+    background:   #ddd;
+}
