@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { COURSES } from './interfaces/courses.interface';
 import { Courses } from './core/course.db';
 
@@ -6,6 +6,7 @@ import { Courses } from './core/course.db';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
   title = 'test';
